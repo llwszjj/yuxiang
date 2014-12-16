@@ -1,0 +1,82 @@
+/**
+ * COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+ * these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+ * application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+ * Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+ * INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+ * IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+ */
+
+
+
+*{margin:0;padding:0;}
+img{display:block;border:0 none;}
+.clearfix{*zoom:1;}
+.clearfix:after{clear:both;content:'';display:block;height:0;visibility:hidden;}
+.carosule{height:220px;margin:10% auto;width:330px;overflow:hidden;position:relative;}
+.pic-num{background:rgba(0,0,0,.5);bottom:0;left:0;height:25px;width:100%;position:absolute;text-align:center;}
+.pic-num span{background:#ececec;border-radius:50%;color:#222;display:inline-block;*display:inline;*zoom:1;font-size:12px;height:15px;margin:0 4px;width:15px;}
+.pic-num span.on{background:black;color:#fff;}
+.pic-show{width:100%;height:220px;position:relative;overflow:hidden;}
+.pic{display:inline-block;*display:inline;*zoom:1;float:left;width:330px;height:220px;}
+.pic img{height:100%;width:100%;} 
+#aboutWorklightContent {
+	text-align: center;
+	line-height: 18px;
+	text-shadow: 0 1px 1px #fff;
+}
+
+#aboutWorklightTitle {
+	background: transparent url("../images/IBM_logo.png") no-repeat scroll 50% 30px;
+	height: 80px;
+	text-indent: -9999px;
+	margin: 0;
+}
+
+#aboutWorklightProductName {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 auto;
+}
+
+#aboutWorklightVersion {
+	font-size: 14px;
+	margin: 8px auto;
+}
+
+#aboutWorklightText {
+	text-align: left;
+	margin: 0 auto;
+}
+
+#aboutWorklightLink {
+	color: #204984;
+	display: block;
+	font-size: 22px;
+}
+
+pageContent img {
+	max-width: 300px;
+	display: block;
+}
+
+#FeedsList {
+	margin: 0;
+}
+
+.ui-header h3.ui-title {
+	margin: auto 15px auto auto;
+}
+
+
+/* Provide different styling for iOS 7. */
+.wl_ios7 #PageHeader {
+	padding-top: 15px;
+}
+
+.wl_ios7 #ReloadLink {
+	margin-top: 17px;
+	padding: 5px 5px 5px 29px;
+}

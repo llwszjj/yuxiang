@@ -1,0 +1,121 @@
+<!DOCTYPE HTML><html xmlns:wb="http://open.weibo.com/wb">
+    <head>
+        <meta charset="UTF-8">
+        <title>second</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="shortcut icon">
+        <link href="images/apple-touch-icon.png" rel="apple-touch-icon"> 
+        <link href="jqueryMobile/jquery.mobile-1.4.2.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		 WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "yuxiang",
+   "APP_ID": "yuxiang",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1542741409",
+   "WORKLIGHT_PLATFORM_VERSION": "6.2.0.01.20141027-1531",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/yuxiang\/android\/"
+};
+</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/jquery.mobile-1.4.2.js"></script>
+    		<script src="http://api.map.baidu.com/api?type=quick&amp;ak=Tdk1BDYQCcxlsQi3RsFphZgK&amp;v=1.0"></script>
+    		<script charset="utf-8" src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY&amp;debug=true" type="text/javascript"></script>
+    </head>
+    <body id="content" style="display: none">
+        <div data-role="page" id="FeedsListPage">
+            <div data-position="fixed" data-role="header" data-tap-toggle="false" id="PageHeader">
+                <h3>余香</h3>   
+            </div>
+            <div data-role="content" id="pageContent">   
+                <div class="carosule">
+                    <div class="pic-show">
+                        <div class="pic">
+                            <img alt="" src="images/pic1.jpg">
+				    </div>
+                        <div class="pic">
+                            <img alt="" src="images/pic2.jpg">
+				    </div>
+                        <div class="pic">
+                            <img alt="" src="images/pic3.jpg">
+				    </div>
+                    </div>
+                    <div class="pic-num"></div>
+                </div>
+   				<!-- data-filter="true"s -->
+                <ul data-filter="true" data-inset="true" data-role="listview" id="FeedsList"></ul>															
+            </div>
+            <div data-position="fixed" data-role="footer" data-tap-toggle="false" id="PageFooter">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-icon="home" href="#" onclick="loadFeedsPage();">首页</a>
+                        </li>
+                        <li>
+                            <a data-icon="grid" href="#" onclick="loadMessagePage();">发布</a>
+                        </li>
+                        <li>
+                            <a data-icon="star" href="#" onclick="loadActivityPage();">活动</a>
+                        </li>
+                        <li>
+                            <a data-icon="info" href="#AboutPage">我</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="AboutPage">
+            <div data-position="fixed" data-role="header" data-theme="a" id="PageHeader">
+                <h3>余香</h3>
+            </div>
+            <div data-role="content" id="aboutWorklightContent">
+                <h2 class="translate" id="aboutWorklightTitle"></h2>
+                <p class="translate">余香团队开发</p>
+                <br>
+                <p class="translate">version 1.0</p>
+                <br>
+                <wb:publish action="pubilish" appkey="3humEP" button_size="middle" button_type="red" language="zh_cn" refer="y" type="web"></wb:publish>		
+                <br>
+                <br>
+                <h3>余香小窝</h3>
+                <br>
+                <div id="myMap"></div>	
+            </div>
+            <div data-position="fixed" data-role="footer" id="PageFooter">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-icon="home" href="#" onclick="loadFeedsPage();">首页</a>
+                        </li>
+                        <li>
+                            <a data-icon="grid" href="#" onclick="loadMessagePage();">发布</a>
+                        </li>
+                        <li>
+                            <a data-icon="star" href="#" onclick="loadActivityPage();">活动</a>
+                        </li>
+                        <li>
+                            <a data-icon="info" href="#">我</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="js/initOptions.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/messages.js"></script>
+    </body>
+</html>

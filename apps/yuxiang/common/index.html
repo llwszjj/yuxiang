@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html xmlns:wb="http://open.weibo.com/wb">
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>second</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		
+	    	<link rel="shortcut icon" href="images/favicon.png">
+	    	<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    	
+    		<link href="jqueryMobile/jquery.mobile-1.4.2.css" rel="stylesheet">
+    		<link rel="stylesheet" href="css/main.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/jquery.mobile-1.4.2.js"></script>
+    		<script src="http://api.map.baidu.com/api?type=quick&ak=Tdk1BDYQCcxlsQi3RsFphZgK&v=1.0"></script>
+    		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY&debug=true" type="text/javascript" charset="utf-8"></script>
+    	</head>
+    
+		<body id="content" style="display: none">
+		<div data-role="page" id="FeedsListPage">
+   			<div id="PageHeader" data-role="header" data-position="fixed"   data-tap-toggle="false">
+   				<h3>余香</h3>   
+			</div>
+   			<div id="pageContent" data-role="content" >   
+   				
+   				<div class="carosule">
+				  <div class="pic-show">
+				    <div class="pic">
+				      <img src="images/pic1.jpg" alt=""/>
+				    </div>
+				    <div class="pic">
+				      <img src="images/pic2.jpg"  alt=""/>
+				    </div>
+				    <div class="pic">
+				      <img src="images/pic3.jpg"  alt=""/>
+				    </div>
+				  </div>
+				  <div class="pic-num"></div>
+				</div>
+   				<!-- data-filter="true"s -->
+   				<ul id="FeedsList" data-role="listview" data-inset="true"  data-filter="true"></ul>															
+			</div>
+			<div id="PageFooter" data-role="footer" data-position="fixed"  data-tap-toggle="false">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#" data-icon="home" onclick="loadFeedsPage();">首页</a></li>
+						<li><a href="#" data-icon="grid" onclick="loadMessagePage();">发布</a></li>
+						<li><a href="#" data-icon="star" onclick="loadActivityPage();">活动</a></li>
+   						<li><a href="#AboutPage" data-icon="info">我</a></li>
+   					</ul>
+				</div>
+			</div>
+   		</div>
+		<div data-role="page" id="AboutPage">
+			<div id="PageHeader" data-role="header" data-position="fixed" data-theme="a">
+		    	<h3>余香</h3>
+			</div>
+						
+		    <div data-role="content" id="aboutWorklightContent">
+		    	<h2 id="aboutWorklightTitle" class="translate"></h2>
+				<p class="translate">余香团队开发</p>
+				<br>
+				<p  class="translate">version 1.0</p>
+				<br>
+				<wb:publish action="pubilish" type="web" language="zh_cn" button_type="red" button_size="middle" refer="y" appkey="3humEP" ></wb:publish>		
+					<br><br>
+				<h3>余香小窝</h3>
+			<br>
+			<div id="myMap"></div>	
+			</div>
+						
+			<div id="PageFooter" data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+		    		<ul>
+								<li><a href="#" data-icon="home" onclick="loadFeedsPage();">首页</a></li>
+								<li><a href="#" data-icon="grid" onclick="loadMessagePage();">发布</a></li>
+								<li><a href="#" data-icon="star" onclick="loadActivityPage();">活动</a></li>
+		   						<li><a href="#" data-icon="info" >我</a></li>
+		   			</ul>
+				</div>
+			</div>
+		</div>
+			<script src="js/initOptions.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/messages.js"></script>
+		</body>
+</html>
